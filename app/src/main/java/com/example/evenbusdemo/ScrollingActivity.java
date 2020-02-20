@@ -33,7 +33,7 @@ public class ScrollingActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Hello: ", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
-                EventBus.getDefault().post(new MessageEvent("HIHI CLICKED"));
+                EventBus.getDefault().post(new MessageEvent("Clicked"));
                 Intent intent = new Intent(ScrollingActivity.this, MainActivity.class);
                 startActivity(intent);
                 finish();
